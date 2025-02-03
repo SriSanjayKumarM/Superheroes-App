@@ -1,6 +1,5 @@
 package com.example.superheroesapp.model
 
-import android.media.Image
 import androidx.annotation.StringRes
 import com.example.superheroesapp.R
 

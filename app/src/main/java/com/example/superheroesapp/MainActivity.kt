@@ -9,6 +9,10 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.superheroesapp.model.Hero
+import com.example.superheroesapp.model.HeroesRepository
+import com.example.superheroesapp.model.HeroesRepository.heroes
+import com.example.superheroesapp.ui.theme.HeroList
 import com.example.superheroesapp.ui.theme.SuperheroesAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -28,7 +32,8 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun AppMain(modifier: Modifier = Modifier) {
+fun AppMain() {
+    HeroList(heroes = heroes)
 }
 
 @Preview(showBackground = true)
